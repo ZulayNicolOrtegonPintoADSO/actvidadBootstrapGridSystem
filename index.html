@@ -16,48 +16,70 @@
         <div class="row"> <!-- parte del contenedor -->
             <div class="col">  <!-- parte del contenedor -->
                 <!-- PRIMERA FILA -->
-                <div class="row"> 
-                    <div class="col-6 col-md-4"> <div class="bg-warning"> . </div></div> <!-- bloque 1 -->
-                    <div class="col-6 col-md-4"> <div class="bg-info">. </div></div> <!-- bloque 2 -->
-                    <div class="col-4  d-sm-none d-md-block"> <div class="bg-primary"> . </div></div> <!-- bloque 3 -->
+                <div class="container-fluid">
+                    <div class="row m-1"> 
+                        <div class="col-6 col-md-4"> <div class="bg-warning"> . </div></div> <!-- bloque 1 -->
+                        <div class="col-6 col-md-4"> <div class="bg-info">. </div></div> <!-- bloque 2 -->
+                        <div class="col-4  d-sm-none d-md-block"> <div class="bg-primary"> . </div></div> <!-- bloque 3 -->
+                    </div>
                 </div>
 
                 <!-- SEGUNDA FILA -->
-                <div class="row"> 
+                <div class="container-fluid">  <!-- bloque 1 de pantalla sm -->
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="row m-1">
+                                <div class="col-6 p-2 bg-light border d-sm-block d-md-none">
+                                    <div class="row m-1">
+                                        <div class="col-6 p-2 bg-success"> <div> . </div></div>
+                                    <div class="col-6  p-2 bg-primary"> <div> . </div></div>
+                                    </div>
+                                </div> 
 
-                    <div class="col-12 col-md-4 border"> 
-                        <div class="row m-2">
-                            <div class="col-6 col-md-4 d-sm-none d-md-block "> <div class="bg-warning"> . </div></div> <!-- bloque 1 -->
-                            <div class="col-6 col-md-4 d-sm-none d-md-block"> <div class="bg-info"> . </div></div> <!-- bloque 1 -->
+                                <div class="col-6 p-2 bg-info d-sm-block d-md-none"> <!-- bloque 2 de pantalla sm -->
+                                    <div class="row m-1">
+                                        <div class="col-6 p-2 bg-danger"> <div> . </div></div>
+                                        <div class="col-6  p-2 bg-dark"> <div> . </div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="container-fluid">
+                            <div class="col-12 d-sm-none d-md-block bg-info">  <!-- bloque 1 de pantalla md -->
+                                <div class="row m-1 p-2">
+                                    <div class="col-6  p-2 bg-danger"> <div> . </div></div>
+                                    <div class="col-6  p-2 bg-dark"> <div> . </div></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-6 col-md-4 border"> 
-                        <div class="row m-2">
-                            <div class="col-6 col-md-4 d-sm-block d-md-none"> <div class="bg-warning"> . </div></div> <!-- bloque 1 -->
-                            <div class="col-6 col-md-4 d-sm-block d-md-none"> <div class="bg-info"> . </div></div> <!-- bloque 1 -->
-                        </div>
-                    </div>
-                    
-                    <div class="col-6 col-md-4 border"> 
-                        <div class="row m-2" >
-                            <div class="col-6 col-md-4"> <div class="bg-danger"> . </div></div> <!-- bloque 1 -->
-                            <div class="col-6 col-md-4"> <div class="bg-success"> . </div></div> <!-- bloque 1 -->
-                        </div>
-                    </div>
-                </div>
+                </div> 
 
                 <!-- TERCERA FILA -->
-                <div class="row m-2"> 
-                    <div class="col-4 col-md-4"> <div class="bg-secondary"> . </div></div> <!-- bloque 1 -->
-                    <div class="col-4 col-md-4"> <div class="bg-info"> . </div></div> <!-- bloque 2 -->
-                    <div class="col-4 col-md-4"> <div class="bg-primary"> . </div></div> <!-- bloque 3 -->
+                <div class="container-fluid">
+                    <div class="row m-1"> 
+                        <div class="col-4 col-sm-4 d-sm-block d-md-none"> <div class="bg-secondary"> . </div></div> <!-- bloque 1 de pantalla sm -->
+                        <div class="col-4 col-sm-4 d-sm-block d-md-none"> <div class="bg-info"> . </div></div> <!-- bloque 2 pantalla sm  -->
+                        <div class="col-4 col-sm-4 d-sm-block d-md-none"> <div class="bg-primary"> . </div></div> <!-- bloque 3 pantalla sm  -->
+    
+                        <div class="col-3 col-md-3 col-md-3  d-sm-none d-md-block"> <div class="bg-primary"> . </div></div> <!-- bloque 1 de pantalla md -->
+                        <div class="col-3 col-md-3 col-md-3  d-sm-none d-md-block"> <div class="bg-info"> . </div></div> <!-- bloque 2 de pantalla md -->
+                        <div class="col-3 col-md-3 col-md-3  d-sm-none d-md-block"> <div class="bg-secondary"> . </div></div> <!-- bloque 3 de pantalla md -->
+                        <div class="col-3 col-md-3 col-md-3  d-sm-none d-md-block"> <div class="bg-success"> . </div></div> <!-- bloque 4 de pantalla md -->
+                    </div>
                 </div>
+        
                 <!-- CUARTA FILA -->
-                <div class="row m-2"> 
-                    <div class="col-12 col-md-12"> <div class="bg-success"> . </div></div> <!-- bloque 1 -->
+                <div class="container-fluid">
+                    <div class="row m-2"> 
+                        <div class="col-12 col-md-12 d-sm-block d-md-none"> <div class="bg-success"> . </div></div> <!-- bloque 1 de pantalla sm-->
+    
+                        <div class="col-4 col-md-4 col-md-3  d-sm-none d-md-block"> <div class="bg-warning"> . </div></div> <!-- bloque 1 de pantalla md -->
+                        <div class="col-4 col-md-4 col-md-3  d-sm-none d-md-block"> <div class="bg-danger"> . </div></div> <!-- bloque 2 de pantalla md -->
+                        <div class="col-4 col-md-4 col-md-3  d-sm-none d-md-block"> <div class="bg-primary"> . </div></div> <!-- bloque 3 de pantalla md -->
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
